@@ -9,25 +9,15 @@ export const DilProvider = ({children}:{
     const [dil, setDil] = useState('Türkçe');
 
 
-    
-
-    if(typeof window !== 'undefined'){
-        
-        if (window.localStorage.getItem('secilenDil') === null) {
-            window.localStorage.setItem('secilenDil', dil);
-        }
-
-      }
-
+  /*  if (localStorage.getItem('secilenDil') === null) {
+        localStorage.setItem('secilenDil', dil);
+    }
 
     useEffect(() => {
-
-        if(typeof window !== 'undefined'){
-        setDil(`${window.localStorage.getItem('secilenDil')}`);
-        }
+        setDil(`${localStorage.getItem('secilenDil')}`);
       }, []);
 
-   
+  */ 
     return (
         <DilContext.Provider value={{dil,setDil}}>
             {children}

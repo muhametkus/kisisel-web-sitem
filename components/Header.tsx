@@ -11,24 +11,19 @@ const Header = () => {
   const handleClick = () => {
     if(dil=="Türkçe"){
       setDil("English");
-      if(typeof window !== 'undefined'){
-        window.localStorage.setItem('secilenDil', 'English');
-      }
+      //localStorage.setItem('secilenDil', 'English');
     }
     if(dil=="English"){
       setDil("Türkçe");
-      if(typeof window !== 'undefined'){
-        window.localStorage.setItem('secilenDil', 'Türkçe');
-      }
+      //localStorage.setItem('secilenDil', 'Türkçe');
     }
 
     
   };
 
   useEffect(() => {
-    if(typeof window !== 'undefined'){
-    setDil(`${window.localStorage.getItem('secilenDil')}`);
-    }
+    //setDil(`${localStorage.getItem('secilenDil')}`);
+    
   }, []);
 
   
