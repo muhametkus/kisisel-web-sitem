@@ -11,19 +11,24 @@ const Header = () => {
   const handleClick = () => {
     if(dil=="Türkçe"){
       setDil("English");
+      if(typeof window !== 'undefined'){
       localStorage.setItem('secilenDil', 'English');
+      }
     }
     if(dil=="English"){
       setDil("Türkçe");
+      if(typeof window !== 'undefined'){
       localStorage.setItem('secilenDil', 'Türkçe');
+      }
     }
 
     
   };
 
   useEffect(() => {
+    if(typeof window !== 'undefined'){
     setDil(`${localStorage.getItem('secilenDil')}`);
-    
+    }
   }, []);
 
   

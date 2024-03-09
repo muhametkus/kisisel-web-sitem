@@ -11,10 +11,16 @@ export const DilProvider = ({children}:{
 
     
 
-    useEffect(() => {
+    if(typeof window !== 'undefined'){
+        
         if (localStorage.getItem('secilenDil') === null) {
             localStorage.setItem('secilenDil', dil);
         }
+        
+      }
+
+
+    useEffect(() => {
         setDil(`${localStorage.getItem('secilenDil')}`);
       }, []);
 
