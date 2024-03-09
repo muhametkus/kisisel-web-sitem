@@ -16,12 +16,15 @@ export const DilProvider = ({children}:{
         if (localStorage.getItem('secilenDil') === null) {
             localStorage.setItem('secilenDil', dil);
         }
-        
+
       }
 
 
     useEffect(() => {
+
+        if(typeof window !== 'undefined'){
         setDil(`${localStorage.getItem('secilenDil')}`);
+        }
       }, []);
 
    
