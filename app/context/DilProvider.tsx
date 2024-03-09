@@ -9,11 +9,12 @@ export const DilProvider = ({children}:{
     const [dil, setDil] = useState('Türkçe');
 
 
-    if (localStorage.getItem('secilenDil') === null) {
-        localStorage.setItem('secilenDil', dil);
-    }
+    
 
     useEffect(() => {
+        if (localStorage.getItem('secilenDil') === null) {
+            localStorage.setItem('secilenDil', dil);
+        }
         setDil(`${localStorage.getItem('secilenDil')}`);
       }, []);
 
