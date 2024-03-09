@@ -13,8 +13,8 @@ export const DilProvider = ({children}:{
 
     if(typeof window !== 'undefined'){
         
-        if (localStorage.getItem('secilenDil') === null) {
-            localStorage.setItem('secilenDil', dil);
+        if (window.localStorage.getItem('secilenDil') === null) {
+            window.localStorage.setItem('secilenDil', dil);
         }
 
       }
@@ -23,7 +23,7 @@ export const DilProvider = ({children}:{
     useEffect(() => {
 
         if(typeof window !== 'undefined'){
-        setDil(`${localStorage.getItem('secilenDil')}`);
+        setDil(`${window.localStorage.getItem('secilenDil')}`);
         }
       }, []);
 
