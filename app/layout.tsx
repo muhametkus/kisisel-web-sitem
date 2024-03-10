@@ -27,10 +27,10 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${inter.className} w-full h-screen bg-[#B9B4C7] sm:bg-[#FAF0E6] flex`}>
+      <body className={`${inter.className} w-full h-screen bg-[#FAF0E6] flex`}>
         <DilProvider>
-        <div className="flex w-full xl:justify-between 2xl:justify-center mx-auto bg-[#FAF0E6]">
-          <div className="px-10 pr-64 sm:pl-5 sm:w-[90%] sm:ml-0 pt-10 absolute z-10 container mx-auto  bg-[#FAF0E6]">
+        <div className="flex xl:justify-between 2xl:justify-center mx-auto bg-[#FAF0E6] ">
+          <div className="px-5 pr-80 sm:px-3 sm:pr-3 pt-10 mx-auto bg-[#FAF0E6] container">
           {children}
           </div>
           <div className="hidden sm:flex w-full fixed bottom-0 z-50 ">
@@ -41,7 +41,7 @@ export default function RootLayout({
             
           <MenuDesen/>
 
-          <div className={`flex`}>
+          <div className={`flex `}>
           <Header/>
           </div>
         </div>   

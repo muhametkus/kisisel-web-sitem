@@ -8,7 +8,7 @@ export const DilProvider = ({children}:{
 
     const [dil, setDil] = useState('Türkçe');
     const linkler=[
-        
+
         {
           link:'/',
           isim:'Anasayfa',
@@ -58,6 +58,7 @@ export const DilProvider = ({children}:{
   */ 
     return (
         <DilContext.Provider value={{dil,setDil,linkler}}>
+           
             {children}
         </DilContext.Provider>
     )
