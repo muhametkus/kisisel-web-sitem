@@ -37,7 +37,7 @@ const Header = () => {
 
 
           <ul className='text-2xl flex flex-col gap-y-5 px-5'>
-            {linkler.map((link)=>(
+            {linkler.map((link: { link: any; link2: any; icon: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; isim: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; isim2: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; })=>(
 
 <li className='hover:bg-[#352F44] hover:text-[#FAF0E6] px-3 py-2 rounded-xl duration-500 text-[#352F44]'><Link href={`${dil=="Türkçe"?link.link:link.link2}`} className='flex items-center gap-x-2'> {link.icon}            
 {dil=="Türkçe"?link.isim:link.isim2}</Link></li>

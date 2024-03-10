@@ -13,7 +13,7 @@ const MobilMenu = () => {
 <div className="fixed bottom-0 left-0 z-50 w-full h-16 bg-[#B9B4C7]  dark:bg-gray-700 dark:border-gray-600">
 
     <div className="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
-        {linkler.map((link)=>(
+        {linkler.map((link: { icon: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; isim: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; })=>(
             <button type="button" className="inline-flex flex-col items-center justify-center hover:bg-gray-50 dark:hover:bg-gray-800 group">
             {link.icon}
             <span className="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">{link.isim}</span>
