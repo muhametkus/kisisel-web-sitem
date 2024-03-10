@@ -30,7 +30,7 @@ export default function RootLayout({
       <body className={`${inter.className} w-full h-screen bg-[#FAF0E6] flex`}>
         <DilProvider>
         <div className="flex xl:justify-between 2xl:justify-center mx-auto bg-[#FAF0E6] ">
-          <div className="px-5 pr-80 sm:px-3 sm:pr-3 pt-10 mx-auto bg-[#FAF0E6] container">
+          <div className="px-5 pr-80 sm:px-5 sm:pr-5 pt-10 mx-auto bg-[#FAF0E6] container">
           {children}
           </div>
           <div className="hidden sm:flex w-full fixed bottom-0 z-50 ">
