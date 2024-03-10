@@ -43,16 +43,16 @@ export default function Home() {
   ];
 
   return (
-    <div className="w-full flex flex-col gap-y-3">
-      <div className=''><img className="w-[250px] rounded-full outline outline-offset-2 outline-4 outline-[#5C5470] mx-auto" src="https://media.licdn.com/dms/image/D4D03AQE03QsnIt6Lxg/profile-displayphoto-shrink_200_200/0/1697616372438?e=1715212800&v=beta&t=HRGA7KXpq8aXm-DpTUV2sN3kPJqVlTgcW8phHCmGoGc" alt="" /></div>
-      <div className={`w-[70%] sm:w-[300px] flex mx-auto mt-10 flex-col gap-y-5`}>
-      <h2 className="text-4xl text-[#352F44] font-light">{dil=="Türkçe"?icerik.turkce.baslik:icerik.english.baslik} <span className="font-normal text-[#5C5470]">{dil=="Türkçe"?icerik.turkce.isim:icerik.english.isim}</span></h2>
-        <p className="text-xl">
+    <div className="w-full sm:w-[250px] border border-black flex flex-col gap-y-3">
+      <div className='w-full'><img className="w-[250px] sm:w-[150px] rounded-full outline outline-offset-2 outline-4 outline-[#5C5470] mx-auto" src="https://media.licdn.com/dms/image/D4D03AQE03QsnIt6Lxg/profile-displayphoto-shrink_200_200/0/1697616372438?e=1715212800&v=beta&t=HRGA7KXpq8aXm-DpTUV2sN3kPJqVlTgcW8phHCmGoGc" alt="" /></div>
+      <div className={`w-[70%] sm:w-[90%] flex mx-auto mt-10 flex-col gap-y-5`}>
+      <h2 className="text-4xl sm:text-3xl text-[#352F44] font-light">{dil=="Türkçe"?icerik.turkce.baslik:icerik.english.baslik} <span className="font-normal text-[#5C5470]">{dil=="Türkçe"?icerik.turkce.isim:icerik.english.isim}</span></h2>
+        <p className="text-xl sm:text-lg">
         {dil=="Türkçe"?icerik.turkce.yazi:icerik.english.yazi}
         </p>
       </div>
 
-      <div className='w-[70%] sm:w-[300px] mx-auto'>
+      <div className='w-[70%] sm:w-[90%] mx-auto'>
         <ul className="flex gap-x-10 mt-3 mx-auto">
           {icons.map((icon)=>(
 
@@ -61,11 +61,7 @@ export default function Home() {
         </ul>
       </div>
 
-      <div className='py-96'>
-        sdfgfd<br/>
-        dfg<br/>
-        fdgd<br/>
-      </div>
+
       
     </div>
   );
