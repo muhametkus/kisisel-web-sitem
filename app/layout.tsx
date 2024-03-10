@@ -33,7 +33,7 @@ export default function RootLayout({
           <div className="px-10 pr-64 sm:pl-5 sm:w-[90%] sm:ml-0 pt-10 absolute z-10 container mx-auto  bg-[#FAF0E6]">
           {children}
           </div>
-          <div className="flex w-full fixed bottom-0 z-50">
+          <div className="hidden sm:flex w-full fixed bottom-0 z-50 ">
           
           <MobilMenu/>
           </div>
