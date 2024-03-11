@@ -16,7 +16,7 @@ const Hakkimda = () => {
       <h1 className='text-center text-7xl mb-8'>{dil=="Türkçe"?"Hakkımda":"About Me"}</h1>
 
         <div className='flex 2xl:flex-row xl:flex-row flex-col gap-x-10 gap-y-5 2xl:items-center xl:items-center '>
-            <img src="./images/foto.png" alt="foto" className='rounded-full shadow-2xl w-[250px] h-[250px] mx-auto'/>
+            <img src="./images/foto1.jpg" alt="foto" className='rounded-full shadow-2xl w-[250px] h-[250px] mx-auto'/>
                   
                 <p className='font-light text-xl md:text-base'>{dil=="Türkçe"?yazi[0].turkce:yazi[1].english}</p>
             </div>
