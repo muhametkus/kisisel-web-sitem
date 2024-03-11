@@ -57,7 +57,7 @@ export default function Home() {
         <ul className="flex gap-x-10 mt-3 mx-auto">
           {icons.map((icon)=>(
 
-            <li className='py-4 px-4 bg-[#352F44] hover:bg-[#5C5470] rounded-full duration-500 text-[#B9B4C7] hover:text-[#FAF0E6]'><a target='_blank' href={icon.link}>{icon.icon}</a></li>
+            <li className='outline outline-offset-2 outline-4 outline-[#5C5470] py-4 px-4 bg-[#352F44] hover:bg-[#5C5470] rounded-full duration-500 text-[#B9B4C7] hover:text-[#FAF0E6]'><a target='_blank' href={icon.link}>{icon.icon}</a></li>
           ))}
         </ul>
       </div>
