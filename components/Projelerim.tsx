@@ -21,7 +21,7 @@ const Projelerim = () => {
     ];
 
   return (
-    <div className='w-full flex flex-col gap-20 2xl:gap-32 md:gap-14  xl:grid xl:grid-cols-2 2xl:grid 2xl:grid-cols-2 pb-20'>
+    <div className='w-full flex flex-col gap-20 2xl:gap-32 md:gap-14  xl:grid xl:grid-cols-2 2xl:grid 2xl:grid-cols-2 pb-40'>
 
 {projeler.map((proje)=>(
     <div className="card w-[98%] sm:w-[95%] sm:mx-auto glass border-0">

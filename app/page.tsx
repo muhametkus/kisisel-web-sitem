@@ -44,7 +44,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="w-full sm:w-full flex flex-col gap-y-3">
+    <div className="w-full sm:w-full flex flex-col gap-y-3 pb-14">
       <div className='w-full'><img className="w-[250px] sm:w-[200px] rounded-full outline outline-offset-2 outline-4 outline-[#5C5470] mx-auto" src="https://media.licdn.com/dms/image/D4D03AQE03QsnIt6Lxg/profile-displayphoto-shrink_200_200/0/1697616372438?e=1715212800&v=beta&t=HRGA7KXpq8aXm-DpTUV2sN3kPJqVlTgcW8phHCmGoGc" alt="" /></div>
       <div className={`w-[70%] xl:w-full lg:w-full md:w-full sm:w-full flex mx-auto mt-10 flex-col gap-y-5`}>
       <h2 className="text-4xl sm:text-3xl text-[#352F44] font-light">{dil=="Türkçe"?icerik.turkce.baslik:icerik.english.baslik} <span className="font-normal text-[#5C5470]">{dil=="Türkçe"?icerik.turkce.isim:icerik.english.isim}</span></h2>

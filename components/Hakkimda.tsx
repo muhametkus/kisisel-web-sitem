@@ -11,7 +11,7 @@ const Hakkimda = () => {
       
   ]
   return (
-    <div className='2xl:w-[80%] xl:w-[80%] w-full mx-auto pb-20'>
+    <div className='2xl:w-[80%] xl:w-[80%] w-full mx-auto pb-28'>
 
       <h1 className='text-center text-7xl mb-8'>{dil=="Türkçe"?"Hakkımda":"About Me"}</h1>
 
