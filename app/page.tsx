@@ -45,10 +45,10 @@ export default function Home() {
 
   return (
     <div className="w-full sm:w-full flex flex-col gap-y-3 pb-14">
-      <div className='w-full'><img className="w-[250px] sm:w-[200px] rounded-full outline outline-offset-2 outline-4 outline-[#5C5470] mx-auto" src="/images/foto2.jpg" alt="" /></div>
+      <div className='w-full scale-up-center'><img className="text-focus-in w-[250px] sm:w-[200px] rounded-full outline outline-offset-2 outline-4 outline-[#5C5470] mx-auto" src="/images/foto2.jpg" alt="" /></div>
       <div className={`w-[70%] xl:w-full lg:w-full md:w-full sm:w-full flex mx-auto mt-10 flex-col gap-y-5`}>
-      <h2 className="text-4xl sm:text-3xl text-[#352F44] font-light">{dil=="Türkçe"?icerik.turkce.baslik:icerik.english.baslik} <span className="font-normal text-[#5C5470]">{dil=="Türkçe"?icerik.turkce.isim:icerik.english.isim}</span></h2>
-        <p className="text-xl sm:text-lg">
+      <h2 className={`text-4xl sm:text-3xl text-[#352F44] font-light tracking-in-expand`}>{dil=="Türkçe"?icerik.turkce.baslik:icerik.english.baslik} <span className="font-normal text-[#5C5470] ">{dil=="Türkçe"?icerik.turkce.isim:icerik.english.isim}</span></h2>
+        <p className="text-xl sm:text-lg text-focus-in">
         {dil=="Türkçe"?icerik.turkce.yazi:icerik.english.yazi}
         </p>
       </div>
@@ -62,7 +62,7 @@ export default function Home() {
         </ul>
       </div>
       <hr className="h-px w-[75%] sm:w-[85%] mx-auto mt-20 bg-[#352F44] border-0"/>
-      <div className='w-[70%] xl:w-full lg:w-full md:w-full sm:w-full mx-auto pt-14 pb-20 '>
+      <div className='w-[70%] xl:w-full lg:w-full md:w-full sm:w-full mx-auto pt-14 pb-20 text-focus-in'>
         <Yetenekler baslikYetenek={dil=="Türkçe"?"Diller & Yetenekler":"Languages & Skills"} />
       </div>
 
